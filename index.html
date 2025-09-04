@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Interactive Food Menu</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Select Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(120deg, #e0ffe0, #ffe0e0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .menu-choice {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu-button {
+      padding: 20px 40px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .veg {
+      background-color: #4CAF50;
+    }
+    .veg:hover {
+      background-color: #3e8e41;
+    }
+
+    .nonveg {
+      background-color: #E53935;
+    }
+    .nonveg:hover {
+      background-color: #c62828;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>🍽️ Our Menu</h1>
-    
-    <div class="menu-item" onclick="toggleDetails(this)">
-      <h2>Burger</h2>
-      <div class="details">
-        <img src="https://via.placeholder.com/200" alt="Burger">
-        <p>Juicy grilled beef patty with lettuce, tomato, and cheese.</p>
-        <p><strong>Price:</strong> $8.99</p>
-      </div>
-    </div>
-
-    <div class="menu-item" onclick="toggleDetails(this)">
-      <h2>Margherita Pizza</h2>
-      <div class="details">
-        <img src="https://via.placeholder.com/200" alt="Pizza">
-        <p>Classic pizza with tomato, mozzarella, and fresh basil.</p>
-        <p><strong>Price:</strong> $10.50</p>
-      </div>
-    </div>
-
-    <div class="menu-item" onclick="toggleDetails(this)">
-      <h2>Caesar Salad</h2>
-      <div class="details">
-        <img src="https://via.placeholder.com/200" alt="Salad">
-        <p>Crisp romaine lettuce with Caesar dressing and croutons.</p>
-        <p><strong>Price:</strong> $6.75</p>
-      </div>
-    </div>
-
+  <h1>🍽️ Welcome to Our Restaurant</h1>
+  <div class="menu-choice">
+    <button class="menu-button veg" onclick="location.href='veg.html'">🥦 Veg Menu</button>
+    <button class="menu-button nonveg" onclick="location.href='nonveg.html'">🍗 Non-Veg Menu</button>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>

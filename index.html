@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Food Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍽️ Our Menu</h1>
+    
+    <div class="menu-item" onclick="toggleDetails(this)">
+      <h2>Burger</h2>
+      <div class="details">
+        <img src="https://via.placeholder.com/200" alt="Burger">
+        <p>Juicy grilled beef patty with lettuce, tomato, and cheese.</p>
+        <p><strong>Price:</strong> $8.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDetails(this)">
+      <h2>Margherita Pizza</h2>
+      <div class="details">
+        <img src="https://via.placeholder.com/200" alt="Pizza">
+        <p>Classic pizza with tomato, mozzarella, and fresh basil.</p>
+        <p><strong>Price:</strong> $10.50</p>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDetails(this)">
+      <h2>Caesar Salad</h2>
+      <div class="details">
+        <img src="https://via.placeholder.com/200" alt="Salad">
+        <p>Crisp romaine lettuce with Caesar dressing and croutons.</p>
+        <p><strong>Price:</strong> $6.75</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

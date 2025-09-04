@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vegetarian Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-image: url('images/veg-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥦 Vegetarian Menu</h1>
+
+    <a href="nonveg.html" class="nav-link">Go to Non-Veg Menu 🍗</a>
+
+    <div class="menu-item" onclick="toggleDetails(this)">
+      <h2>Paneer Tikka</h2>
+      <div class="details">
+        <img src="images/paneer.jpg" alt="Paneer Tikka" />
+        <p>Grilled cottage cheese cubes with spicy marinade.</p>
+        <p><strong>Price:</strong> $9.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDetails(this)">
+      <h2>Veg Biryani</h2>
+      <div class="details">
+        <img src="images/veg-biryani.jpg" alt="Veg Biryani" />
+        <p>Fragrant rice cooked with vegetables and spices.</p>
+        <p><strong>Price:</strong> $8.50</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
